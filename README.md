@@ -26,6 +26,8 @@
 
 
 1. Clone the repo and open it in your terminal:
+    
+    
     git clone https://github.com/hey-d/flamBackend
     cd flamBackend
 
