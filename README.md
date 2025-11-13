@@ -80,6 +80,7 @@
 8. Update Configuration:   
 
     queuectl config set maxRetries 5
+    
     queuectl config set backoffBase 3
 
 9. Stop Workers gracefully:               
