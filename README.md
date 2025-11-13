@@ -29,12 +29,17 @@
     
     
     git clone https://github.com/hey-d/flamBackend
+
     cd flamBackend
 
 2. Install dependencies:
+    
+    
     npm install
 
 3. Link it globally:
+    
+    
     npm link
 
 
