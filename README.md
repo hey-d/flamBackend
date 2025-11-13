@@ -1,7 +1,6 @@
 # **QueueCTL**
 
 
-
 * QueueCTL is a command-line tool I built in Node.js that works like a small background job queue system.
 * It lets you add commands as jobs, run them using worker processes, handle retries automatically, and move failed jobs to a Dead Letter Queue (DLQ).
 * All jobs are stored locally so they don’t disappear even if you stop and restart the program.
@@ -9,11 +8,7 @@
 
 
 
-
-
-
 #### **Features:**
-
 
 
 * Add jobs to a queue through the CLI
@@ -27,39 +22,24 @@
 
 
 
-
-
-
 #### **Setup:**
 
 
-
 1. Clone the repo and open it in your terminal:
-
- 	git clone https://github.com/hey-d/flamBackend
-
+    git clone https://github.com/hey-d/flamBackend
  	cd flamBackend
 
-
-
 2. Install dependencies:
-
     npm install
 
-
-
 3. Link it globally:
-
-	npm link
-
-
+    npm link
 
 
 
 
 
 #### **Usage:**
-
 
 
 1. Add a New Job:                         
@@ -94,10 +74,7 @@
 
 
 
-
-
 #### **Tesing the System:**
-
 
 
 You can run the built-in test script that creates and processes 30 jobs:
