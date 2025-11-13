@@ -36,27 +36,21 @@
 
 1. Clone the repo and open it in your terminal:
 
-
-
  	git clone https://github.com/hey-d/flamBackend
 
  	cd flamBackend
 
 
 
-2\. Install dependencies:
+2. Install dependencies:
 
-&nbsp;	
-
-&nbsp;	npm install
+    npm install
 
 
 
-3\. Link it globally:
+3. Link it globally:
 
-&nbsp;	
-
-&nbsp;	npm link
+	npm link
 
 
 
@@ -68,15 +62,33 @@
 
 
 
-1. Add a New Job:                         queuectl enqueue "{\\"command\\":\\"echo Hello World\\"}"
-2. See Pending Jobs:                      queuectl list --state pending
-3. Start Workers:                         queuectl worker start --count 2
-4. Check Overall Status                   queuectl status
-5. View Completed Or Failed Jobs:         queuectl list
-6. Check Jobs that Failed Permanently:    queuectl dlq list
-7. Retry a DLQ Job:                       queuectl dlq retry <jobId>
-8. Update Configuration:                  queuectl config set maxRetries 5 || queuectl config set backoffBase 3
-9. Stop Workers gracefully:               queuectl worker stop
+1. Add a New Job:                         
+    queuectl enqueue "{\\"command\\":\\"echo Hello World\\"}"
+
+2. See Pending Jobs:                     
+     queuectl list --state pending
+
+3. Start Workers:                         
+    queuectl worker start --count 2
+
+4. Check Overall Status                   
+    queuectl status
+
+5. View Completed Or Failed Jobs:         
+    queuectl list
+
+6. Check Jobs that Failed Permanently:    
+    queuectl dlq list
+
+7. Retry a DLQ Job:                       
+    queuectl dlq retry <jobId>
+
+8. Update Configuration:                  
+    queuectl config set maxRetries 5
+    queuectl config set backoffBase 3
+
+9. Stop Workers gracefully:               
+    queuectl worker stop
 
 
 
@@ -88,11 +100,9 @@
 
 
 
-**You can run the built-in test script that creates and processes 30 jobs:**
+You can run the built-in test script that creates and processes 30 jobs:
 
-	
-
-	**npm run test:perf**
+	npm run test:perf
 
 
 
