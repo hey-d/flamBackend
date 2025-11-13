@@ -29,7 +29,7 @@
     
     
     git clone https://github.com/hey-d/flamBackend
-
+    
     cd flamBackend
 
 2. Install dependencies:
@@ -49,28 +49,36 @@
 #### **Usage:**
 
 
-1. Add a New Job:                         
+1. Add a New Job:   
+
     queuectl enqueue "{\\"command\\":\\"echo Hello World\\"}"
 
-2. See Pending Jobs:                     
+2. See Pending Jobs: 
+
      queuectl list --state pending
 
-3. Start Workers:                         
+3. Start Workers:   
+
     queuectl worker start --count 2
 
-4. Check Overall Status                   
+4. Check Overall Status:
+
     queuectl status
 
-5. View Completed Or Failed Jobs:         
+5. View Completed Or Failed Jobs: 
+
     queuectl list
 
-6. Check Jobs that Failed Permanently:    
+6. Check Jobs that Failed Permanently:  
+
     queuectl dlq list
 
-7. Retry a DLQ Job:                       
+7. Retry a DLQ Job:   
+
     queuectl dlq retry <jobId>
 
-8. Update Configuration:                  
+8. Update Configuration:   
+
     queuectl config set maxRetries 5
     queuectl config set backoffBase 3
 
